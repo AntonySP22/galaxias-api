@@ -42,6 +42,6 @@ public class Galaxia {
      * cascade = CascadeType.ALL = asocia las operaciones de depertamento a sus sisPlanetas
      * orphanRemoval = true = si un empleado no tiene galaxia de elimina el empleado
      * */
-    @OneToMany(mappedBy = "departamento", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "galaxia", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<SisPlaneta> sisPlanetas = new ArrayList<>();
 }
